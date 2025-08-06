@@ -1,0 +1,24 @@
+package br.com.senaisp.bauru.secao03.aula06;
+
+import javax.swing.JOptionPane;
+
+public class Teste2 {
+
+	public static void main(String[] args) {
+		 JOptionPane.showConfirmDialog(null,
+	                "Ola, participante, e bem-vindo ao programa de namoro favorito da America! Deseja continuar ?",
+	                "Bem-vindo participante",
+	                0);
+		 String Input01 = ( String) JOptionPane.showInputDialog(null,
+				   "Qual é o seu nome?",
+	                "Questão 1",
+	                3,
+	                null,
+	                null,
+	                "String.");
+		 
+		 
+
+	}
+
+}

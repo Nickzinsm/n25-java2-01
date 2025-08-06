@@ -1,0 +1,15 @@
+package br.com.senaisp.bauru.secao03.aula06;
+
+import javax.swing.JOptionPane;
+
+public class Teste01 {
+
+	public static void main(String[] args) {
+		 JOptionPane.showMessageDialog(null,
+	                "Ola, participante, e bem-vindo ao programa de namoro favorito da America!",
+	                "Information",
+	                0);
+
+	}
+
+}
