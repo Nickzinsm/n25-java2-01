@@ -1,0 +1,41 @@
+package br.com.senaisp.bauru.secao03.aula07;
+
+import javax.swing.JOptionPane;
+
+public class Teste2 {
+
+	public static void main(String[] args) {
+		 JOptionPane.showConfirmDialog(null,
+	                "Ola, participante, e bem-vindo ao programa de namoro favorito da America! Deseja continuar ?",
+	                "Bem-vindo participante",
+	                JOptionPane.YES_NO_OPTION,
+	                JOptionPane.INFORMATION_MESSAGE);
+		 String questao01 = ( String) JOptionPane.showInputDialog(null,
+				   "Qual é o seu nome?",
+	                "Questão 1",
+	                JOptionPane.QUESTION_MESSAGE, //tipo de mensagem
+	                null,//icone
+	                null,//Opções ddefault
+	                "String.");// opção default
+		 //Solicitar para o usuario
+		 //Seu time favorito
+		 //Deve selecionar de uma lista de times
+		 //Essa lista deve ter pelo menos 5 nomes
+		 //Sugestão: Corinthinas, São Paulo, Santos,
+		 //Noroeste, Palmeiras, Vasco...
+		 
+
+		 
+		 String[] opcoes = {"Corinthinas", "São Paulo", "Santos", "Noroeste", "Palmeiras", "Vasco" };
+	        String questao03 = (String)JOptionPane.showInputDialog(null,
+	                "Is this a question?",
+	                "questao 2",
+	                JOptionPane.QUESTION_MESSAGE,
+	                null,
+	                opcoes,
+	                opcoes[0]);
+		 
+
+	}
+
+}

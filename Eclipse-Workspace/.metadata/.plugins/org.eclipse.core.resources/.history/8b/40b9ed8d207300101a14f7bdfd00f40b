@@ -1,0 +1,29 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Exemplo04 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(Exemplo04.class.getResourceAsStream("teste_arquivo.txt"))
+				.useLocale(Locale.US);
+		
+		/*while (sc.hasNext()) {
+			String linha sc.next();
+			System.out.println(linha);
+			
+		}
+		*/
+		System.out.println(sc.nextInt()); //Segunda linha primeira parte
+		System.out.println(sc.nextInt()); //Segunda linha segunda parte
+		System.out.println(sc.nextInt()); //Segunda linha terceira parte
+		
+		System.out.println(sc.nextDouble()); //Terceira linha primeira parte
+		System.out.println(sc.nextDouble()); //Terceira linha segunda parte
+		System.out.println(sc.nextDouble()); //Terceira linha terceira parte
+		sc.nextLine(); //por conta do nextDouble
+		System.out.println(sc.nextLine()); //ultima linha
+		
+		sc.close();
+	}
+
+}
