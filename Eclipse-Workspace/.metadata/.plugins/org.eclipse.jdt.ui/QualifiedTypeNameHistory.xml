@@ -9,5 +9,9 @@
     <fullyQualifiedTypeName name="br.com.senaisp.bauru.secao04.aula09.OrdemTexto"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="Forca"/>
+    <fullyQualifiedTypeName name="java.lang.instrument.ClassFileTransformer"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="br.com.senaisp.bauru.secao04.aula10.CalculoBaskara"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
