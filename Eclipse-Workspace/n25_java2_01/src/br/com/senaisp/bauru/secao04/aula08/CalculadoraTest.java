@@ -4,7 +4,7 @@ public class CalculadoraTest {
 
 	public static void main(String[] args) {
 		Calculadora calc = new Calculadora();
-		//Calculando cada pessoa
+		//Calculado cada pessoa
 		calc.calcularTotal("Pessoa 1", 10);
 		calc.calcularTotal("Pessoa 2", 12);
 		calc.calcularTotal("Pessoa 3", 9);
@@ -13,11 +13,11 @@ public class CalculadoraTest {
 		calc.calcularTotal("Pessoa 6", 15);
 		calc.calcularTotal("Pessoa 7", 11);
 		calc.calcularTotal("Pessoa 8", 30);
-		//Mostrando o total da mesa
-		System.out.println("Total da Mesa: " + calc.getGrandeTotal());
-		//Dividindo a conta entre os participantes
-		System.out.println("A divisão para 6 pagantes ficou em : " + calc.dividirValor(6));
-		
+		//Mostrando o total da Mesa
+		System.out.println("Total da mesa: " + calc.getGrandeTotal());
+		//Dividindo a conta entre os 6 participantes
+		System.out.println("A divisão para 6 pagantes ficou em: " + 
+								calc.dividirValor(6));
 	}
 
 }

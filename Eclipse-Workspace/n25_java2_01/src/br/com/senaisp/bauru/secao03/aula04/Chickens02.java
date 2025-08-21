@@ -5,23 +5,22 @@ public class Chickens02 {
 	public static void main(String[] args) {
 		double dailyAverage = 0, monthlyAverage = 0, monthlyProfit = 0;
 		int totalEggs = 0;
-		// dia 1
-		totalEggs+= 100;
-		//dia 2
+		//1º dia
+		totalEggs = 100;
+		//2º dia
 		totalEggs += 121;
-		//dia 3
+		//3º dia
 		totalEggs += 117;
 		//fazendo as contas
-		dailyAverage = totalEggs / 3.;    //	dailyAverage = (double)totalEggs / 3;   ou   	dailyAverage = totalEggs 0/3;
+		//Não pode ser feito operação entre inteiros nesse caso, se ocorrer
+		//trunca (perde) as casas decimais, por isso dividimos por 3.0
+		dailyAverage = totalEggs / 3.; 
 		monthlyAverage = dailyAverage * 30;
-		monthlyProfit  = monthlyProfit * 0.18;
+		monthlyProfit = monthlyAverage * 0.18;
+		//----
         System.out.println("Daily Average:   " +dailyAverage);
         System.out.println("Monthly Average: " +monthlyAverage);
         System.out.println("Monthly Profit:  $" +monthlyProfit);
-        
-        
-        
-        
 	}
 
 }

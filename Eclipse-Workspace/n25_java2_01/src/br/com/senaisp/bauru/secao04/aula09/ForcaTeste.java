@@ -7,19 +7,21 @@ public class ForcaTeste {
 	public static void main(String[] args) {
 		Forca fo = new Forca();
 		Scanner sc = new Scanner(System.in);
-		System.out.println(fo);
+		//System.out.println(fo);
 		do {
 			System.out.println(fo);
 			System.out.println("Digite uma letra: ");
-			char letra = sc.nextLine().charAt(0);
+			//
+			char letra=sc.nextLine().charAt(0);
 			fo.lancarLetra(letra);
-		} while (!fo.ehFimDeJogo());
+		} while(!fo.ehFimDeJogo());
 		sc.close();
-		if (fo.getErros() >= 6) {
+		if (fo.getErros()>=6) {
 			System.out.println("Você foi enforcado! :-(");
 		} else {
 			System.out.println("Você Venceu! :-)");
 		}
 		System.out.println("A palavra foi " + fo.getPalavraRevelada());
 	}
+
 }

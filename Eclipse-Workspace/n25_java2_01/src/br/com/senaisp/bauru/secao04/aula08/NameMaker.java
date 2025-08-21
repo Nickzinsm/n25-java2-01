@@ -1,19 +1,18 @@
 package br.com.senaisp.bauru.secao04.aula08;
 
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class NameMaker {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.println("Qual o seu nome?");
-		String nome = sc.next();
-		String nomeDoMeio = sc.next();
-		String ultimoNome = sc.next();
-		String nomeCompleto = nome + " " + nomeDoMeio + " " + ultimoNome;
-		System.out.println(nome + "\n" + nomeDoMeio + "\n" + ultimoNome + "\n" + nomeCompleto);
-		sc.close();
+		//Solicitar o nome, nome do meio e sobrenome separadamente
+		//Mostrar o nome completo ao término
+		//pode usar o Scanner ou JoptionPane para solicitar ao usuário
+		String nome = JOptionPane.showInputDialog("Digite seu nome: ");
+		String nomeMeio = JOptionPane.showInputDialog("Agora nome do meio: ");
+		String sobrenome = JOptionPane.showInputDialog("Agora sobrenome: ");
+		String nomeCompleto = nome + " " + nomeMeio + " " + sobrenome;
+		JOptionPane.showMessageDialog(null, "Seu nome completo é " + nomeCompleto);
 	}
 
 }

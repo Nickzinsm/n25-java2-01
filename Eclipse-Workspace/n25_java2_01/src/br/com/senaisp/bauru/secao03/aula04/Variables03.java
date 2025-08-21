@@ -14,6 +14,7 @@ public class Variables03 {
         doubleVar2 = 2.1;
         doubleVar3 = 3.1;
         doubleVar4 = 4.1;
+        
     
         String stringVar1 = "1";
         String stringVar2 = "2";
@@ -29,6 +30,9 @@ public class Variables03 {
         System.out.println("doubleVar4 = "  +doubleVar4);
         System.out.println("stringVar1 = "  +(stringVar1 +1));
         System.out.println("stringVar2 = "  +(stringVar2 +2));
+
+        System.out.println("Meu exemplo = "     + (intVar1 + intVar2));
+
 	}
 
 }
