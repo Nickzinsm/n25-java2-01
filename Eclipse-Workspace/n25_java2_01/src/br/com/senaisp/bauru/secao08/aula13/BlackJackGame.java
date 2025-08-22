@@ -54,14 +54,14 @@ public class BlackJackGame {
 		boolean todosPararam = true;
 		int maiorCarta = 0;
 		for (BlackJackPlayer pl : players) {
-			//Verificando se todos pararam
-			todosPararam = todosPararam && (pl.isParou() || pl.isPerdedor());
 			if (pl.getTotalCarta()==21) {
 				pl.setGanhador(true);
 				haVencedor = true;
 			} else if (pl.getTotalCarta()>21) {
 				pl.setPerdedor(true);
 			}
+			//Verificando se todos pararam
+			todosPararam = todosPararam && ( pl.isParou() || pl.isPerdedor() );
 			//Determinar quem é maior carta abaixo de 21
 			if (pl.getTotalCarta()<21 && pl.getTotalCarta()>maiorCarta) {
 				maiorCarta = pl.getTotalCarta();
