@@ -1,0 +1,7 @@
+package br.com.senaisp.bauru;
+
+import com.sun.glass.ui.Application;
+
+public class javaFX_Main extends Application{
+public void start(Stage arg0)
+}
