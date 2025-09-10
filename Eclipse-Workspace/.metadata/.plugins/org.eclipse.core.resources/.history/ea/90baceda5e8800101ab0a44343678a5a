@@ -1,0 +1,5 @@
+package projeto_javafx;
+
+public class JavaFX_Main extends Application{
+
+}
